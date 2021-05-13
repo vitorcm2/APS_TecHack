@@ -11,7 +11,9 @@ Edite o arquivo `to_check.txt`, passando os diretórios ou arquivos a serem vali
 
 Rode `createBaseHashes.py` para gerar o hash do arquivo ou diretório.
 
-> python3 APS_TecHack/createBaseHashes.py
+> python3 APS_TecHack/createBaseHashes.py APS_TecHack/to_check.txt
+
+Crie dentro do diretório clonado um arquivo `.env`, seguindo o template existente para receber notificações por meio do Telegram.
 
 Rode `./APS_TecHack/setup.sh`.
 
