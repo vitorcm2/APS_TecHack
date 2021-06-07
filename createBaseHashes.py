@@ -22,7 +22,7 @@ def getdirfiles(path):
 
 if __name__ == "__main__":
     
-    basedir = "./test/"
+    basedir = "/var/www/html/"
     
     data = getdirfiles(basedir)
 
