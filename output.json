@@ -1,6 +1,7 @@
 {
-    "test/": "affcab558dc4ed963e3a6fc65fb27900",
-    "test/aaa.txt": "47bce5c74f589f4867dbd57e9ca9f808",
-    "test/bbb.txt": "f3ade9ef7d08cfcc3b5d695edf202a47",
-    "test/ccc.txt": "9df62e693988eb4e1e1444ece0578579"
+    "./test/aaa.txt": "853c3b09d4048d8d90d538c76ab25a01",
+    "./test/bbb.txt": "f3ade9ef7d08cfcc3b5d695edf202a47",
+    "./test/ccc.txt": "9df62e693988eb4e1e1444ece0578579",
+    "./test/pastateste/": "ec4733b7fba4e8b1d2ce270e51243b03",
+    "./test/pastateste/testhash": "12b6a81ddcff321b89052e88b4b51f49"
 }

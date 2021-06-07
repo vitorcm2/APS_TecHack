@@ -1,24 +1,30 @@
-from argparse import ArgumentParser
 from components.directoryHash import GetHashofDirs
 from components.fileHash import GetFileHash
 import json
+import os
 
 
 MSG_DESCRIPTION = "Create Base hashes of directories and files."
 
+def getdirfiles(path):
+    listdir = os.listdir(path)
+    data = []
+
+    for i in listdir:
+        if not(os.path.isdir(path+i)):
+            data += [path+i]
+        else:
+            data += [path+i+"/"]
+            data += getdirfiles(path+i+"/")
+
+    return data
+
 
 if __name__ == "__main__":
-    parser = ArgumentParser(description=MSG_DESCRIPTION)
-    parser.add_argument(
-        "file", help="File containing directories and files to be hashed."
-    )
-
-    args = parser.parse_args()
-
-    with open(args.file, "r") as f:
-        data = f.read()
-
-    data = data.strip().split()
+    
+    basedir = "./test/"
+    
+    data = getdirfiles(basedir)
 
     result = {}
 

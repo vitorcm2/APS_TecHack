@@ -1,4 +1,0 @@
-test/
-test/aaa.txt 
-test/bbb.txt 
-test/ccc.txt
