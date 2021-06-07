@@ -1,5 +1,7 @@
 # APS TecHack
 
+### Matheus Pellizzon, Pedro Ramos, Vitor Marques
+
 Na máquina onde queremos verificar os hashes:
 
 Instalação requisitos
